@@ -17,6 +17,8 @@ module.exports = function(RED) {
 
         	if(state =="ON" || state == true || state =="true" || state == 1){
         		state = true
+			}else if(state =="OFF" || state == false || state =="false" || state == 0){
+        		state = false
         	}else if(state == "STATUS"){
         		state = "STAT"
         	}else{
